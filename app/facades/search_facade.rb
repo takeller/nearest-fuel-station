@@ -5,13 +5,13 @@ class SearchFacade
   end
 
   def station_info
-    nearest_station = @search_results.nearest_station
+    nearest_station ||= @search_results.nearest_station
     station ||= format_station_info(nearest_station)
   end
 
   def directions
-    station_directions = @search_results.directions
-    format_directions(station_directions)
+    station_directions ||= @search_results.directions
+    directions ||= format_directions(station_directions)
   end
 
   private
