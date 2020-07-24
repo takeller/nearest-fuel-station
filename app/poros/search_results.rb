@@ -2,8 +2,6 @@ class SearchResults
 
   def initialize(search_params)
     @location = search_params[:location]
-    # @nrel_service ||= NrelService.new(search_params[:location])
-    # @mapquest_service ||= MapquestService.new(directions_params)
   end
 
   def nearest_station

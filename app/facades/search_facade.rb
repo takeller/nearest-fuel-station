@@ -1,7 +1,6 @@
 class SearchFacade
 
   def initialize(search_results)
-    # binding.pry
     @search_results = search_results
   end
 
