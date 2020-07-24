@@ -10,7 +10,8 @@ class Directions
   def narrative
     narrative = ""
     @legs.first[:maneuvers].each do |maneuver|
-      narrative + maneuver[:narrative] + " "
-    end 
+      narrative = narrative + maneuver[:narrative] + " "
+    end
+    narrative
   end
 end

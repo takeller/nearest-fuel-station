@@ -30,7 +30,7 @@ class SearchFacade
 
   def format_directions(directions)
     directions = directions[:route]
-    direction_info{
+    direction_info = {
       distance: directions[:distance],
       time: directions[:realTime]/60,
       legs: directions[:legs]
