@@ -1,0 +1,11 @@
+
+<h3> Station Info </h3>
+<p class="name"> Name: <%= @search_facade.station_info.station_name %></p>
+<p class="address"> Address: <%= @search_facade.station_info.street_address %></p>
+<p class="fuel_type"> Fuel Type: <%= @search_facade.station_info.fuel_type %></p>
+<p class="access_times"> Access Times: <%= @search_facade.station_info.access_times %></p>
+
+<h3> Directions to Station </h3>
+<p> Distance: <%= @search_facade.directions.distance %> </p>
+<p> Travel Time: <%= @search_facade.directions.time %> </p>
+<p> Directions: <%= @search_facade.directions.narrative %> </p>
