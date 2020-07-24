@@ -22,9 +22,14 @@ describe 'As a visitor' do
       access_times = find('.access_times').text
       expect(access_times).not_to be_empty
 
-      expect(page).to have_content('Distance: 0.1 miles')
-      expect(page).to have_content('Travel Time: 1 min')
-      expect(page).to have_content('Directions: Turn left onto Lawrence St Destination will be on the left')
+      distance = find('.distance').text
+      expect(distance).not_to be_empty
+
+      travel_time = find('.travel_time').text
+      expect(travel_time).not_to be_empty
+
+      directions = find('.directions').text
+      expect(directions).not_to be_empty
     end
   end
 end
